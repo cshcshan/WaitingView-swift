@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WaitingView" customModule="WaitingView_swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7m-jA-tNg">
+                    <rect key="frame" x="163.5" y="343.5" width="48" height="30"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelButtonPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="YjQ-JO-E6c"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0D-yo-mND">
+                    <rect key="frame" x="169.5" y="309" width="35" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="2CN-BO-jS2"/>
+                        <constraint firstAttribute="width" constant="35" id="R2j-bH-M8R"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v7m-jA-tNg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BgL-gg-2pk"/>
+                <constraint firstItem="D0D-yo-mND" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-7" id="Cnt-sk-fQz"/>
+                <constraint firstItem="D0D-yo-mND" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HWO-A7-DQk"/>
+                <constraint firstItem="v7m-jA-tNg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="25" id="Y0P-VK-3bl"/>
+            </constraints>
+            <connections>
+                <outlet property="image_View" destination="D0D-yo-mND" id="m5A-1X-6ZQ"/>
+            </connections>
+        </view>
+    </objects>
+</document>
